@@ -69,7 +69,7 @@
     ];
 
     noButton.addEventListener('mouseover', function() {
-  if (noClickCount >= 6) {
+  if (noClickCount >= 5) {
     makeButtonRunAway();
   }
 });
@@ -85,7 +85,7 @@
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 6) {
+        if (noClickCount <= 5) {
           noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..."][noClickCount];
         }
         else {
@@ -117,4 +117,5 @@
 </body>
 
 </html>
+
 
